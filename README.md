@@ -9,4 +9,4 @@ You must protect user privacy at all times, even when using prototypes. Prototyp
 ## Usage
 
 - Run `npm install`
-- To start development server `npm run gulp`
+- To start development server `npm run watch`
