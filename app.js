@@ -1,6 +1,8 @@
 // Core dependencies
 const path = require('path')
 const fs = require('fs')
+const PROTOTYPE_USERNAME = process.env.PROTOTYPE_USERNAME;
+const PROTOTYPE_PASSWORD = process.env.PROTOYPE_PASSWORD;
 
 // External dependencies
 const bodyParser = require('body-parser')
@@ -108,7 +110,7 @@ checkFiles()
 
 
 // Warn if node_modules folder doesn't exist
-function checkFiles () {
+function checkFiles() {
   const nodeModulesExists = fs.existsSync(path.join(__dirname, '/node_modules'))
   if (!nodeModulesExists) {
     console.error('ERROR: Node module folder missing. Try running `npm install`')
@@ -139,7 +141,7 @@ if (!sessionDataDefaultsFileExists) {
 }
 
 // Check if the app is documentation only
-if(onlyDocumentation !== 'true') {
+if (onlyDocumentation !== 'true') {
   // Require authentication if not
   app.use(authentication);
 }
@@ -158,8 +160,8 @@ app.use('/nhsuk-frontend', express.static(path.join(__dirname, 'node_modules/nhs
 
 
 // Check if the app is documentation only
-if(onlyDocumentation == 'true') {
-  app.get('/', function(req, res) {
+if (onlyDocumentation == 'true') {
+  app.get('/', function (req, res) {
     // Redirect to the documentation pages if it is
     res.redirect('/docs');
   });
