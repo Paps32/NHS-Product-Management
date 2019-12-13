@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Product Management
+{% endblock %}
+
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/product-management">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/product-management">Back to Home</a></p>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+    <div class="nhsuk-grid-row nhsuk-u-margin-bottom-5">
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-u-margin-bottom-5">Product profiles</h1>
+        <p class="nhsuk-body-l">Meet and hear from product managers working in health.</p>
+        <!-- Brittany Cheng -->
+        <div class="nhsuk-u-padding-bottom-9">
+          <h2 class="nhsuk-heading-m">Associate product manager - Brittany Cheng</h2>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/R0ffUjavxxs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- Product managers - Ed Chan & Mo Azim -->
+        <div class="nhsuk-u-padding-bottom-9">
+          <h2 class="nhsuk-heading-m">Product managers - Ed Chan & Mo Azim</h2>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/FqBvTFhS1ig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- Senior product manager - Sarah  -->
+        <div class="nhsuk-u-padding-bottom-9">
+          <h2 class="nhsuk-heading-m">Senior product manager - Sarah</h2>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/68Gh9TzemM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- Lead product manager - Ritcha -->
+        <div class="nhsuk-u-padding-bottom-9">
+          <h2 class="nhsuk-heading-m">Lead product manager - Ritcha</h2>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MIq7oqgIZUw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- Head of product - Sika -->
+        <div class="nhsuk-u-padding-bottom-9">
+          <h2 class="nhsuk-heading-m">Head of product - Sika</h2>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tZF2pPCMb68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-top-8">
+        <div class="nhsuk-review-date">
+          <p class="nhsuk-body-s">Updated: December 2019</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

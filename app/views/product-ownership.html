@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Product Management
+{% endblock %}
+
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/product-management">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/product-management">Back to Home</a></p>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+      <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+
+<div class="nhsuk-grid-row nhsuk-u-margin-bottom-5">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1 class="nhsuk-u-margin-bottom-5">Product ownership</h1>
+    <p class="nhsuk-body-l">Applying tools, terms and concepts.</p>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row nhsuk-u-margin-top-8">
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/product-ownership/user-stories">User stories</a></h2>
+    <p>Writing user stories.</p>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/product-ownership/measuring-performance">Measuring performance</a></h2>
+    <p>Setting goals and indicators.</p>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/product-ownership/managing-backlogs">Managing backlogs</a></h2>
+    <p>Information and examples.</p>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row nhsuk-u-margin-top-4">
+
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/product-ownership/external-resources">External resources</a></h2>
+    <p>Helpful links and information.</p>
+  </div>
+
+</div>
+
+<div class="nhsuk-grid-row nhsuk-u-margin-top-4">
+
+      </main>
+    </div>
+    {% endblock %}

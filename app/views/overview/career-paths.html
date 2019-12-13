@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Product Management
+{% endblock %}
+
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/product-management">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/product-management">Back to Home</a></p>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+      <div class="nhsuk-grid-row nhsuk-u-margin-bottom-5">
+        <div class="nhsuk-grid-column-two-thirds">
+          <h1 class="nhsuk-u-margin-bottom-5">Product career paths</h1>
+          <p class="nhsuk-body-l">NHS Digital follows industry standards within product roles and is aligned with similar roles across government.
+          </p>
+          <h2 class="nhsuk-heading-l">What are the roles and bands?</h2>
+          <p class="nhsuk-body">There are 5 roles across product management:</p>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+          <li>associate product manager (7)</li>
+          <li>product manager (8a)</li>
+          <li>senior product manager (8b)</li>
+          <li>lead product manager (8c)</li>
+          <li>head of product manager (8d)</li>
+        </ul>
+        <p><a href="https://www.nhsemployers.org/pay-pensions-and-reward/agenda-for-change/pay-scales/annual" target="_blank" rel="noopener noreferrer">Read more about salaries on NHS Employers.</a></p>
+        <h2 class="nhsuk-heading-l">Where can I find skills and competencies?</h2>
+        <p class="nhsuk-body">The Digital, Data and Technology (DDaT) framework publishes all the roles within the profession and the skills needed to do them. You can find out more about what product managers do and the skills they need.
+        </p>
+        <p><a href="https://www.gov.uk/government/publications/product-manager-role-description/product-manager-role-description" target="_blank" rel="noopener noreferrer">Read more about product management, DDaT and other digital roles.</a></p>
+      </div>
+    </div>
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-top-8">
+        <div class="nhsuk-review-date">
+          <p class="nhsuk-body-s">Updated: December 2019</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

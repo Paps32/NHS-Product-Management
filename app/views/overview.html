@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Product Management
+{% endblock %}
+
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/product-management">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/product-management">Back to Home</a></p>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+      <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+
+<div class="nhsuk-grid-row nhsuk-u-margin-bottom-5">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1 class="nhsuk-u-margin-bottom-5">Overview</h1>
+    <p class="nhsuk-body-l">Find information and training on being a product manager in the NHS.</p>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row nhsuk-u-margin-top-8">
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/overview/career-paths">Career paths</a></h2>
+    <p>Learn about roles and levels.</p>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/overview/profiles">Profiles</a></h2>
+    <p>Hear from product managers across health.</p>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/overview/joining-a-product-team">Joining a product team</a></h2>
+    <p>Help and advice.</p>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row nhsuk-u-margin-top-4">
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/overview/product-leadership">Product leadership</a></h2>
+    <p>Discussing what product led means.</p>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/overview/community">Community</a></h2>
+    <p>Connect with others working in product.</p>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/overview/training-courses">Training courses</a></h2>
+    <p>Find out what training is on offer.</p>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row nhsuk-u-margin-top-4">
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/overview/external-resources">External resources</a></h2>
+    <p>Helpful links and and information.</p>
+  </div>
+
+
+
+      </main>
+    </div>
+    {% endblock %}

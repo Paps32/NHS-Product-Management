@@ -1,0 +1,76 @@
+{% extends 'layout.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Product Management
+{% endblock %}
+
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/product-management">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/product-management">Back to Home</a></p>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+      <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+
+<div class="nhsuk-grid-row nhsuk-u-margin-bottom-5">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1 class="nhsuk-u-margin-bottom-5">User focus</h1>
+    <p class="nhsuk-body-l">Championing and representing all your users.</p>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row nhsuk-u-margin-top-8">
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/user-focus/user-research-plans">User research plans</a></h2>
+    <p>Examples of and how to.</p>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/user-focus/running-ideation-sessions">Running ideation sessions</a></h2>
+    <p>How to run sessions.</p>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/user-focus/user-needs">User needs</a></h2>
+    <p>How to write user needs and examples.</p>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row nhsuk-u-margin-top-4">
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/user-focus/user-insight">User insight</a></h2>
+    <p>Incorporating insight into backlogs.</p>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/user-focus/discoveries">Discoveries</a></h2>
+    <p>Examples of discoveries in health.</p>
+  </div>
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/user-focus/training-courses">Training courses</a></h2>
+    <p>Find out what training is on offer.</p>
+  </div>
+
+</div>
+<div class="nhsuk-grid-row nhsuk-u-margin-top-4">
+  <div class="nhsuk-grid-column-one-third">
+    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/user-focus/external-resources">External resources</a></h2>
+    <p>Helpful links and and information.</p>
+  </div>
+  </div>
+
+<div class="nhsuk-grid-row nhsuk-u-margin-top-4">
+
+      </main>
+    </div>
+    {% endblock %}
