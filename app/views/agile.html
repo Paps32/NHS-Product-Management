@@ -6,70 +6,97 @@
 -->
 
 <!-- Set the page title inside the pageTitle block -->
-{% block pageTitle %}
-  Product Management
-{% endblock %}
-
-{% block beforeContent %}
+{% block pageTitle %} Product Management {% endblock %} {% block beforeContent
+%}
 <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/product-management">Home</a></li>
+      <li class="nhsuk-breadcrumb__item">
+        <a class="nhsuk-breadcrumb__link" href="/product-management">Home</a>
+      </li>
     </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/product-management">Back to Home</a></p>
+    <p class="nhsuk-breadcrumb__back">
+      <a class="nhsuk-breadcrumb__backlink" href="/product-management"
+        >Back to Home</a
+      >
+    </p>
   </div>
 </nav>
-{% endblock %}
-
-{% block content %}
+{% endblock %} {% block content %}
 <div class="nhsuk-width-container">
-      <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
-
-<div class="nhsuk-grid-row nhsuk-u-margin-bottom-5">
-  <div class="nhsuk-grid-column-two-thirds">
-    <h1 class="nhsuk-u-margin-bottom-5">Agile working</h1>
-    <p class="nhsuk-body-l">Delivery methods and processes.</p>
-  </div>
-</div>
-
-<div class="nhsuk-grid-row nhsuk-u-margin-top-8">
-  <div class="nhsuk-grid-column-one-third">
-    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/agile/learning-about-agile">Intro to agile</a></h2>
-    <p>Learn about agile.</p>
-  </div>
-  <div class="nhsuk-grid-column-one-third">
-    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/agile/setting-sprint-goals">Sprint goals</a></h2>
-    <p>Setting sprint goals.</p>
-  </div>
-  <div class="nhsuk-grid-column-one-third">
-    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/agile/running-show-and-tells">Show and tells</a></h2>
-    <p>Running a show and tell.</p>
-  </div>
-</div>
-
-<div class="nhsuk-grid-row nhsuk-u-margin-top-4">
-  <div class="nhsuk-grid-column-one-third">
-    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/agile/working-in-multi-disciplinary-teams">Multi-disciplinary team</a></h2>
-    <p>Working in a multi-disciplinary team.</p>
-  </div>
-  <div class="nhsuk-grid-column-one-third">
-    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/agile/defining-mvp">Minimum Viable Products</a></h2>
-    <p>Defining a minimum viable product.</p>
-  </div>
-  <div class="nhsuk-grid-column-one-third">
-    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/agile/training-courses">Training courses</a></h2>
-    <p>Find out what training is on offer.</p>
-  </div>
-</div>
-<div class="nhsuk-grid-row nhsuk-u-margin-top-4">
-  <div class="nhsuk-grid-column-one-third">
-    <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3"><a href="/product-management/agile/external-resources">External resources</a></h2>
-    <p>Helpful links and information.</p>
-  </div>
-  </div>
-
-<div class="nhsuk-grid-row nhsuk-u-margin-top-4">
-
-      </main>
+  <main class="nhsuk-main-wrapper app-main-wrapper" id="maincontent">
+    <div class="nhsuk-grid-row nhsuk-u-margin-bottom-5">
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-u-margin-bottom-5">Agile working</h1>
+        <p class="nhsuk-body-l">Delivery methods and processes.</p>
+      </div>
     </div>
-    {% endblock %}
+
+    <div class="nhsuk-grid-row nhsuk-u-margin-top-8">
+      <div class="nhsuk-grid-column-one-third">
+        <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">
+          <a href="/product-management/agile/learning-about-agile"
+            >Intro to agile</a
+          >
+        </h2>
+        <p>Learn about agile.</p>
+      </div>
+      <div class="nhsuk-grid-column-one-third">
+        <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">
+          <a href="/product-management/agile/setting-sprint-goals"
+            >Sprint goals</a
+          >
+        </h2>
+        <p>Setting sprint goals.</p>
+      </div>
+      <div class="nhsuk-grid-column-one-third">
+        <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">
+          <a href="/product-management/agile/running-show-and-tells"
+            >Show and tells</a
+          >
+        </h2>
+        <p>Running a show and tell.</p>
+      </div>
+    </div>
+
+    <div class="nhsuk-grid-row nhsuk-u-margin-top-4">
+      <div class="nhsuk-grid-column-one-third">
+        <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">
+          <a
+            href="/product-management/agile/working-in-multi-disciplinary-teams"
+            >Multi-disciplinary team</a
+          >
+        </h2>
+        <p>Working in a multi-disciplinary team.</p>
+      </div>
+      <div class="nhsuk-grid-column-one-third">
+        <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">
+          <a href="/product-management/agile/defining-mvp"
+            >Minimum Viable Products</a
+          >
+        </h2>
+        <p>Defining a minimum viable product.</p>
+      </div>
+      <div class="nhsuk-grid-column-one-third">
+        <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">
+          <a href="/product-management/agile/training-courses"
+            >Training courses</a
+          >
+        </h2>
+        <p>Find out what training is on offer.</p>
+      </div>
+    </div>
+
+    <div class="nhsuk-grid-row nhsuk-u-margin-top-4">
+      <div class="nhsuk-grid-column-one-third">
+        <h2 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">
+          <a href="/product-management/agile/external-resources">
+            External resources
+          </a>
+        </h2>
+        <p>Helpful links and information.</p>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}
