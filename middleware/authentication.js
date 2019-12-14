@@ -18,6 +18,7 @@ module.exports = function (req, res, next) {
 
   // Set configuration variables
   const env = (process.env.NODE_ENV || 'development').toLowerCase();
+  console.log('CURRENT ENVIRONMENT', env);
   const username = process.env.PROTOTYPE_USERNAME;
   const password = process.env.PROTOTYPE_PASSWORD;
 
