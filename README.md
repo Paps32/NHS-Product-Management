@@ -1,6 +1,6 @@
 # NHS-Product-Management
 
-Vist the deployed application [here](https://nhsuk-product-management.herokuapp.com)
+View the deployed application [here](https://nhsuk-product-management.herokuapp.com)
 
 Note: Login credentials are required
 
