@@ -20,4 +20,8 @@ describe('subpage', function (){
     cy.visit('http://localhost:3000')
     cy.get('.sub-section-buttons').find('h2').eq(1).contains('User focus')
   })
+  it ('renders correct heading for subpage', function(){
+    cy.visit('http://localhost:3000')
+    cy.get('.sub-section-buttons').find('h2').eq(2).contains('Strategic ownership')
+  })
 })
