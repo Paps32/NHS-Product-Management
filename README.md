@@ -2,6 +2,8 @@
 
 View the deployed application <a href="https://nhsuk-product-management.herokuapp.com" target="_blank" rel="noopener noreferrer">here</a>
 
+To push changes to Heroku app 'git push heroku'
+
 
 Note: Login credentials are required
 
